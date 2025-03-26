@@ -76,7 +76,6 @@ export function getRollupConfigs(pkg: Package) {
   }> = umdBuilds(pkg);
 
   const exportsFieldConfig = pkg.exportsFieldConfig();
-
   if (exportsFieldConfig?.conditions.kind === "imports") {
     for (const conditions of exportsFieldConfig.conditions.groups.keys()) {
       const config = getRollupConfig(

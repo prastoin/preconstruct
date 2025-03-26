@@ -15,6 +15,7 @@ import nodeDevProdEntry from "../rollup-plugins/prod-dev-entry";
 import typescriptDeclarations from "../rollup-plugins/typescript-declarations";
 import mjsProxy from "../rollup-plugins/mjs-proxy";
 import json from "@rollup/plugin-json";
+import image from "@rollup/plugin-image";
 import babel from "../rollup-plugins/babel";
 import terser from "../rollup-plugins/terser";
 import { getBaseDistName } from "../utils";
@@ -137,6 +138,7 @@ export let getRollupConfig = (
         }
       }
     },
+    // Here we are going to use the same output options for all entrypoints
     plugins: [
       {
         name: "throw-warnings",
@@ -182,6 +184,7 @@ export let getRollupConfig = (
       json({
         namedExports: false,
       }),
+      image(),
       options.kind === "umd" &&
         alias({
           entries: getAliases(pkg.project),

@@ -58,7 +58,7 @@ function writeOutputFile(
 
 async function buildPackage(pkg: Package) {
   let configs = getRollupConfigs(pkg);
-
+  fs.writeFileSync('tmp.json', JSON.stringify(configs, null, 2));
   let outputs = await Promise.all(
     configs.map(async ({ config, outputs }) => {
       let bundle = await rollup(config);

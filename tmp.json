@@ -1,0 +1,104 @@
+[
+  {
+    "config": {
+      "input": {
+        "dist/typescript-custom-config": "/private/var/folders/lh/sp___7q554z2w4n8tdfn6czm0000gn/T/149f74ff6d3a92c4bda27c4aaec96b6f/src/index.ts"
+      },
+      "plugins": [
+        {
+          "name": "throw-warnings"
+        },
+        {
+          "name": "resolve-errors"
+        },
+        {
+          "name": "server-components"
+        },
+        {
+          "name": "babel"
+        },
+        {
+          "name": "rewrite-babel-runtime-helpers"
+        },
+        {
+          "name": "json"
+        },
+        {
+          "name": "image"
+        },
+        {
+          "name": "node-resolve"
+        }
+      ]
+    },
+    "outputs": [
+      {
+        "format": "cjs",
+        "entryFileNames": "[name].cjs.dev.js",
+        "chunkFileNames": "dist/[name]-[hash].cjs.dev.js",
+        "dir": "/private/var/folders/lh/sp___7q554z2w4n8tdfn6czm0000gn/T/149f74ff6d3a92c4bda27c4aaec96b6f",
+        "exports": "named"
+      },
+      {
+        "format": "es",
+        "entryFileNames": "[name].esm.js",
+        "chunkFileNames": "dist/[name]-[hash].esm.js",
+        "dir": "/private/var/folders/lh/sp___7q554z2w4n8tdfn6czm0000gn/T/149f74ff6d3a92c4bda27c4aaec96b6f"
+      }
+    ]
+  },
+  {
+    "config": {
+      "input": {
+        "dist/typescript-custom-config": "/private/var/folders/lh/sp___7q554z2w4n8tdfn6czm0000gn/T/149f74ff6d3a92c4bda27c4aaec96b6f/src/index.ts"
+      },
+      "plugins": [
+        {
+          "name": "throw-warnings"
+        },
+        {
+          "name": "prod-dev-entry"
+        },
+        {
+          "name": "flow"
+        },
+        {
+          "name": "resolve-errors"
+        },
+        {
+          "name": "typescript-declarations"
+        },
+        {
+          "name": "server-components"
+        },
+        {
+          "name": "babel"
+        },
+        {
+          "name": "rewrite-babel-runtime-helpers"
+        },
+        {
+          "name": "json"
+        },
+        {
+          "name": "image"
+        },
+        {
+          "name": "node-resolve"
+        },
+        {
+          "name": "inline-process-env-node-env-production"
+        }
+      ]
+    },
+    "outputs": [
+      {
+        "format": "cjs",
+        "entryFileNames": "[name].cjs.prod.js",
+        "chunkFileNames": "dist/[name]-[hash].cjs.prod.js",
+        "dir": "/private/var/folders/lh/sp___7q554z2w4n8tdfn6czm0000gn/T/149f74ff6d3a92c4bda27c4aaec96b6f",
+        "exports": "named"
+      }
+    ]
+  }
+]
